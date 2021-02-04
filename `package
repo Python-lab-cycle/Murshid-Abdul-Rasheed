@@ -1,0 +1,61 @@
+from Graphics.Rectangle.RectFunction import *
+from Graphics.Circle.CircleFunction import *
+from Graphics.DGraphics.Sphere.SphereFunction import *
+from Graphics.DGraphics.Cuboid.CuboidFunction import *
+print("Rectangle")
+l = int(input("enter l"))
+b = int(input("enter b"))
+print("area = ", RectArea(l, b))
+
+print("Circle")
+print("Perimeter =", RectPerimeter(l, b))
+
+r = int(input("enter the radius of a circle"))
+print("Circle area = ", CirArea(r))
+print("Circle Perimeter =", CirPerimeter(r))
+
+print("Sphere")
+r = int(input("enter radius of Sphere"))
+print("Circle area = ", SpARea(r))
+print("Circle Perimeter =", SpPerimeter(r))
+
+
+print("Cuboid")
+l = int(input("enter length of Cuboid"))
+b = int(input("enter bredth of Cuboid"))
+h = int(input("enter height of Cuboid"))
+print("Circle area = ", CubArea(l,b,h))
+print("Circle Perimeter =", CubPerimeter(l,b,h))
+
+
+
+
+
+from math import pi
+def CirArea(r):
+    return(pi*r*r)
+def CirPerimeter(r):
+    return(2*pi*r)
+    
+    
+    
+    
+    def RectArea(l,b):
+    return(l*b)
+def RectPerimeter(l,b):
+    return(2*(l+b))
+    
+    
+    
+    def CubArea(l,w,h):
+    return (2*l*w)+(2*l*h)+(2*h*w)
+def CubPerimeter(l,b,h):
+    return 4*(l+b+h)
+    
+    
+    
+    from math import pi
+def SpARea(r):
+    return 4*pi*r*r
+def SpPerimeter(r):
+    return (4/3)*pi*r*r*r
